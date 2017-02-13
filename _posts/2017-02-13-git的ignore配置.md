@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      PHP获取字符串编码
+title:      git的ignore配置
 date:       2017-02-13 12:31:19
-summary:    Git 
+summary:    Git 的ignore配置
 categories: git 
 ---
 
