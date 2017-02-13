@@ -1,0 +1,14 @@
+---
+layout:     post
+title:      PHP获取字符串编码
+date:       2017-02-13 12:31:19
+summary:    在编码的过程中经常会遇到乱码的问题,使用PHP获取字符串编码的代码如下
+categories: php 
+---
+
+在编码的过程中经常会遇到乱码的问题,使用PHP获取字符串编码的代码如下
+
+{% highlight php %}
+  $encode = mb_detect_encoding($str, array("ASCII",'UTF-8',"GB2312","GBK",'BIG5')); 
+  echo $encode;
+{% endhighlight %}
