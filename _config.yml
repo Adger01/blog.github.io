@@ -1,19 +1,19 @@
 # Site settings
-title:       pixell for adger 
+title:       芦苇
 email:       gzjyjs@126.com 
 author:      adger
 description: "一个简单漂亮的jekyll主题 "
 baseurl:     ""
-url:         "http://pixyll.maxee.info"
+url:         "http://www.jiege.site"
 
 #Duoshuo short Name / 多说的shortname
 duoshuo: 
 
 #Baidu analytics / 百度统计(异步的js码，注意使用异步版本的)
-baidu_analyze: 3908cbb144cfa6a823230d653fc22 
+baidu_analyze: 12344544 
 
 # Google analytics
-google_analytics:
+google_analytics:34343434
 
 # Optional features
 animated:           false
