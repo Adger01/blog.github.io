@@ -1,8 +1,8 @@
 # Site settings
-title:       芦苇
+title:       搬砖砸脚-adger
 email:       gzjyjs@126.com 
 author:      adger
-description: "一个简单漂亮的jekyll主题 "
+description: "一个搬砖工的日常砸脚记录"
 baseurl:     ""
 url:         "http://www.jiege.site"
 
@@ -31,8 +31,8 @@ paypal_url:
 flattr_button:
 
 # Build settings
-markdown:     kramdown
+markdown:     markdown
 permalink:    pretty
-paginate:     3
+paginate:     20
 sass:
 compressed: true
