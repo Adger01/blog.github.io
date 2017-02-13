@@ -10,10 +10,10 @@ url:         "http://www.jiege.site"
 duoshuo: 
 
 #Baidu analytics / 百度统计(异步的js码，注意使用异步版本的)
-baidu_analyze: asdfafasdfasfdasdfsadf 
+baidu_analyze:3908cbb144cf558ba6a823230d653fc22 
 
 # Google analytics
-google_analytics:34343434
+google_analytics:
 
 # Optional features
 animated:           false
