@@ -6,14 +6,15 @@ summary:    恩 还不错.
 categories: jekyll pixyll
 ---
 
-# Linux下如何查看版本信息  
 1. ```# uname -a```
 （Linux查看版本当前操作系统内核信息）
 >Linux 2cloo 2.6.32-642.el6.x86_64 #1 SMP Tue May 10 17:27:01 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
 
+
 2. ```# cat /proc/version```
   （Linux查看当前操作系统版本信息）
 >Linux version 2.6.32-642.el6.x86_64 (mockbuild@worker1.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-17) (GCC) ) #1 SMP Tue May 10 17:27:01 UTC 2016
+
 
 3. ```# cat /etc/issue``` or ```cat /etc/redhat-release```
 （Linux查看版本当前操作系统发行版信息）
