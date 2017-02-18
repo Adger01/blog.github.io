@@ -55,7 +55,7 @@ listen 127.0.0.1:110;
 listen *:110;
 listen 110;     # same as *:110
 listen localhost:110;
-{% endgighlight %}    
+{% endhighlight %}    
   IPv6的地址（0.7.58）括在方括号中指定:
 {% highlight nginx%}
 
