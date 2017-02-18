@@ -1,10 +1,10 @@
 Module ngx_http_status_module
 
 Example Configuration
-Directives
-     status
-     status_format
-     status_zone
++ Directives
+     + status
+     + status_format
+     + status_zone
 Data
 Compatibility
 The ngx_http_status_module module provides access to various status information.
