@@ -123,20 +123,24 @@ Default:	—
 Context:	mail
 Sets the configuration for a server.
 
+
+{% highlight nginx %}
 Syntax:	server_name name;
 Default:	
 server_name hostname;
 Context:	mail, server
-Sets the server name that is used:
+{% endhighlight %}  
+设置使用的服务名称【域名】
 
-in the initial POP3/SMTP server greeting;
+在最初的POP3/SMTP服务器的问候；
 in the salt during the SASL CRAM-MD5 authentication;
 in the EHLO command when connecting to the SMTP backend, if the passing of the XCLIENT command is enabled.
 If the directive is not specified, the machine’s hostname is used.
+
 {% highlight nginx %}
 Syntax:	timeout time;
 Default:	
 timeout 60s;
 Context:	mail, server
-{% endhighlight %}
-Sets the timeout that is used before proxying to the backend starts.
+{% endhighlight %}  
+使用代理连接后端之前的超时时间
