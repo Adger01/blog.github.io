@@ -138,5 +138,5 @@ Syntax:	timeout time;
 Default:	
 timeout 60s;
 Context:	mail, server
-{% endhightlight %}
+{% endhighlight %}
 Sets the timeout that is used before proxying to the backend starts.
