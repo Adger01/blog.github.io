@@ -133,9 +133,10 @@ in the initial POP3/SMTP server greeting;
 in the salt during the SASL CRAM-MD5 authentication;
 in the EHLO command when connecting to the SMTP backend, if the passing of the XCLIENT command is enabled.
 If the directive is not specified, the machine’s hostname is used.
-
+{% highlight nginx %}
 Syntax:	timeout time;
 Default:	
 timeout 60s;
 Context:	mail, server
+{% endhightlight %}
 Sets the timeout that is used before proxying to the backend starts.
