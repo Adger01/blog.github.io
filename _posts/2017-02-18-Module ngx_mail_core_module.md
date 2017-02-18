@@ -42,23 +42,27 @@ mail {
         protocol smtp;
     }
 }
-{% endhighlight %}
-Directives
-
+{% endhighlight %}  
+ ###命令###
+{% highlight nginx%}
 Syntax:	listen address:port [ssl] [backlog=number] [bind] [ipv6only=on|off] [so_keepalive=on|off|[keepidle]:[keepintvl]:[keepcnt]];
 Default:	—
 Context:	server
-Sets the address and port for the socket on which the server will accept requests. It is possible to specify just the port. The address can also be a hostname, for example:
-
+{% endhighlight %}    
+  服务接受请求时,针对socket设置一个地址和端口,可以是指定的自定义端口,这个地址也可以是`hostname` ,例如:  
+{% highlight nginx%}
 listen 127.0.0.1:110;
 listen *:110;
 listen 110;     # same as *:110
 listen localhost:110;
-IPv6 addresses (0.7.58) are specified in square brackets:
+{% endgighlight %}    
+  IPv6的地址（0.7.58）括在方括号中指定:
+{% highlight nginx%}
 
 listen [::1]:110;
 listen [::]:110;
-UNIX-domain sockets (1.3.5) are specified with the “unix:” prefix:
+{% endhighlight%}
+  UNIX-domain sockets (1.3.5) are specified with the “unix:” prefix:
 
 listen unix:/var/run/nginx.sock;
 Different servers must listen on different address:port pairs.
