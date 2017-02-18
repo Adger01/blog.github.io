@@ -50,7 +50,7 @@ Default:	—
 Context:	server
 {% endhighlight %}    
   服务接受请求时,针对socket设置一个地址和端口,可以是指定的自定义端口,这个地址也可以是`hostname` ,例如:  
-{% highlight nginx%}
+{% highlight nginx %}
 listen 127.0.0.1:110;
 listen *:110;
 listen 110;     # same as *:110
@@ -81,14 +81,17 @@ so_keepalive=on|off|[keepidle]:[keepintvl]:[keepcnt]
 this parameter configures the “TCP keepalive” behavior for the listening socket. If this parameter is omitted then the operating system’s settings will be in effect for the socket. If it is set to the value “on”, the SO_KEEPALIVE option is turned on for the socket. If it is set to the value “off”, the SO_KEEPALIVE option is turned off for the socket. Some operating systems support setting of TCP keepalive parameters on a per-socket basis using the TCP_KEEPIDLE, TCP_KEEPINTVL, and TCP_KEEPCNT socket options. On such systems (currently, Linux 2.4+, NetBSD 5+, and FreeBSD 9.0-STABLE), they can be configured using the keepidle, keepintvl, and keepcnt parameters. One or two parameters may be omitted, in which case the system default setting for the corresponding socket option will be in effect. For example,
 so_keepalive=30m::10
 will set the idle timeout (TCP_KEEPIDLE) to 30 minutes, leave the probe interval (TCP_KEEPINTVL) at its system default, and set the probes count (TCP_KEEPCNT) to 10 probes.
+{% highlight nginx %}
 Syntax:	mail { ... }
 Default:	—
 Context:	main
+{% endhighlight %}
 Provides the configuration file context in which the mail server directives are specified.
-
+{% highlight nginx %}
 Syntax:	protocol imap | pop3 | smtp;
 Default:	—
 Context:	server
+{% endhighlight %}
 Sets the protocol for a proxied server. Supported protocols are IMAP, POP3, and SMTP.
 
 If the directive is not set, the protocol can be detected automatically based on the well-known port specified in the listen directive:
@@ -97,12 +100,13 @@ imap: 143, 993
 pop3: 110, 995
 smtp: 25, 587, 465
 Unnecessary protocols can be disabled using the configuration parameters --without-mail_imap_module, --without-mail_pop3_module, and --without-mail_smtp_module.
-
+{% highlight nginx %}
 Syntax:	resolver address ... [valid=time];
 resolver off;
 Default:	
 resolver off;
 Context:	mail, server
+{% endhighlight %}
 Configures name servers used to find the client’s hostname to pass it to the authentication server, and in the XCLIENT command when proxying SMTP. For example:
 
 resolver 127.0.0.1 [::1]:5353;
