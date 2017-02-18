@@ -111,18 +111,21 @@ resolver 127.0.0.1 [::1]:5353 valid=30s;
 Before version 1.1.9, tuning of caching time was not possible, and nginx always cached answers for the duration of 5 minutes.
 The special value off disables resolving.
 
+{% highlight nginx %}
 Syntax:	resolver_timeout time;
-Default:	
-resolver_timeout 30s;
+Default:	resolver_timeout 30s;
 Context:	mail, server
-Sets a timeout for DNS operations, for example:
-
+{% endhighlight %}  
+ 
+ 针对DNS操作设置一个超时时间,例如:   
+ 
+{% highlight nginx%}
 resolver_timeout 5s;
 Syntax:	server { ... }
 Default:	—
 Context:	mail
-Sets the configuration for a server.
-
+{% endhighlight %}
+  在server结构体中设置一个配置文件
 
 {% highlight nginx %}
 Syntax:	server_name name;
